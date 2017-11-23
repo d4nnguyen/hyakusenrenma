@@ -19,6 +19,8 @@ def value_match cards
     else
       '1P'
     end
+  else
+    '--'
   end
 end
 
