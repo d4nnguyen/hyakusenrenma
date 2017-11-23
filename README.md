@@ -21,7 +21,7 @@ If the input string is S8D3HQS3CQ, it has Two pairs. the output is 2P.
 
 ## EXECUTION
 
-1. Make sure you have Ruby install on your local computer
+1. Make sure you have Ruby installed on your local computer
 2. Clone/Copy the code to a file_name.rb to your local computer
 3. Open your terminal then cd to the folder that contains the file_name.rb
 4. Run the file using ‘ruby file_name.rb’
