@@ -1,4 +1,4 @@
-def value_match cards
+def rank_match cards
   matches = cards.inject(Hash.new(0)) { |h, card| h[card] += 1; h }
 
   pairs = matches.select { |k, v| k == 2 || v == 2 }.length
@@ -26,15 +26,15 @@ end
 
 def poker_hand input
   cards = input.scan(/.{2}/)
-  values = []
+  ranks = []
   suits = []
   cards.each do |card|
     suits << card[0]
-    values << card[1]
+    ranks << card[1]
   end
   rank = "23456789JQKA"
 
-  puts value_match(values)
+  puts rank_match(ranks)
 end
 
 poker_hand gets.chomp
